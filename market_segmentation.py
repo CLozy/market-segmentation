@@ -11,7 +11,7 @@ st.title("Maket Segmentation")
 st.header("Segmentation Analysis on customer data")
 
 #reading data
-dataset_df = pd.read_excel(r'D:/MachineLearning-Engineer/PROJECTS/STtuts/Lib/site-packages/analytics/Dataset.xls')
+dataset_df = pd.read_excel("Dataset.xls")
 
 #replacing negative values in product A column with 0
 dataset_df["Product A"] = dataset_df["Product A"].apply(lambda x: x if x > 0 else 0)
